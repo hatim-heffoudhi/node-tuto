@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "nexsis poc",
+  "main": "index.js",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-body": "^4.0.3",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-swagger-ui": "^2.9.2",
+    "nodemon": "^1.17.5",
+    "ts-node": "^6.1.1",
+    "tsoa": "^2.1.5",
+    "typescript": "^2.9.2",
+    "typescript-ioc": "^1.2.4"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.28"
+  },
+  "scripts": {
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/server.ts",
+    "tsoa": "tsoa"
+  },
+  "author": "ABE",
+  "license": "ISC"
+}
